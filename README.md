@@ -27,7 +27,7 @@ To start with these projects:
 
 Here are the projects you'll find in this repository:
 
-1. **color-flipper**
+1. **color-flipper** - generates a random color code
 
 
 *Note: Each project has its own README that provides more information about the specific project and its functionality.*
