@@ -50,3 +50,18 @@ function displayReview() {
 }
 
 window.addEventListener("DOMContentLoaded", displayReview);
+//show next and previous
+prevBtn.addEventListener("click", function () {
+  firstReview--;
+  if (firstReview < 0) {
+    firstReview = reviews.length - 1;
+  }
+  displayReview();
+});
+nextBtn.addEventListener("click", function () {
+  firstReview++;
+  if (firstReview > reviews.length - 1) {
+    firstReview = 0;
+  }
+  displayReview();
+});
