@@ -37,3 +37,16 @@ let info = document.getElementById("info");
 let prevBtn = document.querySelector(".prev-btn");
 let nextBtn = document.querySelector(".next-btn");
 let randomBtn = document.querySelector(".random-btn");
+
+//initializing first review to  0 index
+let firstReview = 0;
+//display first review when html document has been completely loaded
+function displayReview() {
+  let items = reviews[firstReview];
+  img.src = items.img;
+  author.textContent = items.name;
+  job.textContent = items.job;
+  info.innerHTML = items.text;
+}
+
+window.addEventListener("DOMContentLoaded", displayReview);
