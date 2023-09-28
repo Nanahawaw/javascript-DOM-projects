@@ -29,6 +29,7 @@ Here are the projects you'll find in this repository:
 
 1. **color-flipper** - generates a random color code
 2. **counter** - every time a button is clicked, an event listener triggers a function that modifies the counter's value and updates its color.
+3. **Review** - Generate and display random user reviews with a simple click
 
 
 *Note: Each project has its own README that provides more information about the specific project and its functionality.*
