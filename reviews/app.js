@@ -65,3 +65,8 @@ nextBtn.addEventListener("click", function () {
   }
   displayReview();
 });
+//generate random review
+randomBtn.addEventListener("click", function () {
+  firstReview = Math.floor(Math.random() * reviews.length);
+  displayReview();
+});
