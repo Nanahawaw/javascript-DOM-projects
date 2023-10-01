@@ -32,6 +32,7 @@ Here are the projects you'll find in this repository:
 3. **Review** - Generate and display random user reviews with a simple click
 4. **Navbar** - solution for implementing a navbar toggle using vanilla JavaScript
 5. **Sidebar** - a dynamic sidebar that provides users with intuitive navigation and enhances the user experience.
+6. **Modal** - a stylish and interactive modal that offers a modern touch to any web application, ensuring enhanced user engagement.
 
 
 *Note: Each project has its own README that provides more information about the specific project and its functionality.*
