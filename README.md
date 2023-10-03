@@ -34,6 +34,7 @@ Here are the projects you'll find in this repository:
 5. **Sidebar** - a dynamic sidebar that provides users with intuitive navigation and enhances the user experience.
 6. **Modal** - a stylish and interactive modal that offers a modern touch to any web application, ensuring enhanced user engagement.
 7. **Questions** - FAQ Interactions & DOM Traversal
+8. **Menu** - create an interactive menu display where items are rendered dynamically using JavaScript
 
 
 *Note: Each project has its own README that provides more information about the specific project and its functionality.*
