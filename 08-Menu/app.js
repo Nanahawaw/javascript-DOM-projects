@@ -74,7 +74,7 @@ const menu = [
 ];
 let sectionCenter = document.querySelector(".section-center"); //the section center is where the menu will be populated
 
-function displayMenu() {
+function displayMenu(menu) {
   let menuToBeDisplayed = menu.map(function (item) {
     return `<article class="menu-item">
           <img src=${item.img} class="photo" alt="menu" />
