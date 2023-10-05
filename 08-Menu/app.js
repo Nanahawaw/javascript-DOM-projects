@@ -73,6 +73,7 @@ const menu = [
   },
 ];
 let sectionCenter = document.querySelector(".section-center"); //the section center is where the menu will be populated
+let filterButtons = document.querySelectorAll(".filter-btn"); //select filter buttons
 
 function displayMenu(menu) {
   let menuToBeDisplayed = menu.map(function (item) {
@@ -90,7 +91,25 @@ function displayMenu(menu) {
         </article>`;
   });
 
-  console.log(menuToBeDisplayed);
   sectionCenter.innerHTML = menuToBeDisplayed.join("");
 }
-window.addEventListener("DOMContentLoaded", displayMenu);
+function showFilteredMenu(event) {
+  let category = event.currentTarget.dataset.id;
+  let menuCategory = menu.filter(function (item) {
+    if (item.category === category) {
+      return item;
+    }
+  });
+  if (category === "all") {
+    displayMenu(menu);
+  } else {
+    displayMenu(menuCategory);
+  }
+}
+
+//display menu on load
+window.addEventListener("DOMContentLoaded", displayMenu(menu));
+//filter items
+filterButtons.forEach(function (btn) {
+  btn.addEventListener("click", showFilteredMenu);
+});
